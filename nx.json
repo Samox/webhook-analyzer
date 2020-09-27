@@ -30,6 +30,9 @@
     },
     "server-shared-config": {
       "tags": []
+    },
+    "server-shared-domain": {
+      "tags": []
     }
   }
 }

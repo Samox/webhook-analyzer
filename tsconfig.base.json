@@ -21,6 +21,9 @@
       ],
       "@webhook-analyzer/server/shared/config": [
         "libs/server/shared/config/src/index.ts"
+      ],
+      "@webhook-analyzer/server/shared/domain": [
+        "libs/server/shared/domain/src/index.ts"
       ]
     }
   },

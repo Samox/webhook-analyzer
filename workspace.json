@@ -107,6 +107,32 @@
           }
         }
       }
+    },
+    "server-shared-domain": {
+      "root": "libs/server/shared/domain",
+      "sourceRoot": "libs/server/shared/domain/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/server/shared/domain/tsconfig.lib.json",
+              "libs/server/shared/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/server/shared/domain/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/shared/domain/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
