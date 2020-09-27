@@ -33,6 +33,12 @@
     },
     "server-shared-domain": {
       "tags": []
+    },
+    "server-shared-core-api-rest": {
+      "tags": []
+    },
+    "shared-domain": {
+      "tags": []
     }
   }
 }

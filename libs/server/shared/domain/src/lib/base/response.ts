@@ -1,7 +1,7 @@
 import { HttpException } from '@nestjs/common';
-import { IResponse } from '@pimp-my-pr/shared/domain';
+import { Response as ResponseInterface} from '@webhook-analyzer/shared/domain';
 
-export class Response<T, E> implements IResponse<T, E> {
+export class Response<T, E> implements ResponseInterface<T, E> {
   data: T;
   error: any;
 
