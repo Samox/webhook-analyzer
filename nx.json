@@ -24,6 +24,12 @@
   "projects": {
     "webhook-analyzer-api": {
       "tags": []
+    },
+    "server-shared-core": {
+      "tags": []
+    },
+    "server-shared-config": {
+      "tags": []
     }
   }
 }

@@ -15,7 +15,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@webhook-analyzer/server/shared/core": [
+        "libs/server/shared/core/src/index.ts"
+      ],
+      "@webhook-analyzer/server/shared/config": [
+        "libs/server/shared/config/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
