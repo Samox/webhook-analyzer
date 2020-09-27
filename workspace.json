@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "projects": {
+    "webhook-analyzer-api": {
+      "root": "apps/webhook-analyzer-api",
+      "sourceRoot": "apps/webhook-analyzer-api/src",
+      "projectType": "application",
+      "prefix": "webhook-analyzer-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/webhook-analyzer-api",
+            "main": "apps/webhook-analyzer-api/src/main.ts",
+            "tsConfig": "apps/webhook-analyzer-api/tsconfig.app.json",
+            "assets": ["apps/webhook-analyzer-api/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/webhook-analyzer-api/src/environments/environment.ts",
+                  "with": "apps/webhook-analyzer-api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "webhook-analyzer-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "apps/webhook-analyzer-api/tsconfig.app.json",
+              "apps/webhook-analyzer-api/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/webhook-analyzer-api/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/webhook-analyzer-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/nest"
+  },
+  "defaultProject": "webhook-analyzer-api"
+}
