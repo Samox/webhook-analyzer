@@ -40,6 +40,9 @@
       ],
       "@webhook-analyzer/server/user/public": [
         "libs/server/user/public/src/index.ts"
+      ],
+      "@webhook-analyzer/server/user/core/application-services": [
+        "libs/server/user/core/application-services/src/index.ts"
       ]
     }
   },

@@ -1,6 +1,6 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { JwtService } from '@nestjs/jwt';
-import { AddUserCommand, UserPublicFacade, UserRepository } from '@pimp-my-pr/server/user/public';
+import { AddUserCommand, UserPublicFacade, UserRepository } from '@webhook-analyzer/server/user/public';
 import { AuthTokenReadModel } from '../../read-models/auth-token/auth-token.read-model';
 import { GetAccessTokenQuery } from './get-access-tokent.query';
 

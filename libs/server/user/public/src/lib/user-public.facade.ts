@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { AddUserCommand, UserFacade } from '@pwebhook-analyzer/server/user/core/application-services';
+import { AddUserCommand, UserFacade } from '@webhook-analyzer/server/user/core/application-services';
 
 @Injectable()
 export class UserPublicFacade {
