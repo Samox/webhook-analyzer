@@ -31,6 +31,9 @@
       "@webhook-analyzer/shared/domain": ["libs/shared/domain/src/index.ts"],
       "@webhook-analyzer/server/auth/api-rest": [
         "libs/server/auth/api-rest/src/index.ts"
+      ],
+      "@webhook-analyzer/server/auth/shell": [
+        "libs/server/auth/shell/src/index.ts"
       ]
     }
   },

@@ -42,6 +42,9 @@
     },
     "server-auth-api-rest": {
       "tags": []
+    },
+    "server-auth-shell": {
+      "tags": []
     }
   }
 }
