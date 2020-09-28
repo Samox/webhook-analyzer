@@ -324,6 +324,35 @@
           }
         }
       }
+    },
+    "server-user-core-domain-services": {
+      "root": "libs/server/user/core/domain-services",
+      "sourceRoot": "libs/server/user/core/domain-services/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/server/user/core/domain-services/tsconfig.lib.json",
+              "libs/server/user/core/domain-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/user/core/domain-services/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/user/core/domain-services/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -43,6 +43,9 @@
       ],
       "@webhook-analyzer/server/user/core/application-services": [
         "libs/server/user/core/application-services/src/index.ts"
+      ],
+      "@webhook-analyzer/server/user/core/domain-services": [
+        "libs/server/user/core/domain-services/src/index.ts"
       ]
     }
   },
