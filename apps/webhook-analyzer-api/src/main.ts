@@ -11,7 +11,7 @@ async function bootstrap(): Promise<void> {
   app.setGlobalPrefix(globalPrefix);
   app.useGlobalPipes(new ValidationPipe());
 
-  const port = process.env.port || 3333;
+  const port = process.env.port || 3334;
 
   const options = new DocumentBuilder()
     .setTitle('Webhook Analyzer')
