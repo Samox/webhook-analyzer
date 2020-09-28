@@ -188,6 +188,32 @@
           }
         }
       }
+    },
+    "server-auth-api-rest": {
+      "root": "libs/server/auth/api-rest",
+      "sourceRoot": "libs/server/auth/api-rest/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/server/auth/api-rest/tsconfig.lib.json",
+              "libs/server/auth/api-rest/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/server/auth/api-rest/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/auth/api-rest/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

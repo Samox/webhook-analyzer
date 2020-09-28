@@ -28,7 +28,10 @@
       "@webhook-analyzer/server/shared/core-api-rest": [
         "libs/server/shared/core-api-rest/src/index.ts"
       ],
-      "@webhook-analyzer/shared/domain": ["libs/shared/domain/src/index.ts"]
+      "@webhook-analyzer/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@webhook-analyzer/server/auth/api-rest": [
+        "libs/server/auth/api-rest/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

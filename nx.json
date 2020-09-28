@@ -39,6 +39,9 @@
     },
     "shared-domain": {
       "tags": []
+    },
+    "server-auth-api-rest": {
+      "tags": []
     }
   }
 }
