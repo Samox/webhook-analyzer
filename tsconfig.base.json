@@ -52,6 +52,9 @@
       ],
       "@webhook-analyzer/server/user/shell": [
         "libs/server/user/shell/src/index.ts"
+      ],
+      "@webhook-analyzer/server/user/infrastructure": [
+        "libs/server/user/infrastructure/src/index.ts"
       ]
     }
   },
