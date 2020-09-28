@@ -48,6 +48,9 @@
     },
     "server-auth-core-application-services": {
       "tags": []
+    },
+    "server-user-public": {
+      "tags": []
     }
   }
 }
