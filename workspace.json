@@ -240,6 +240,35 @@
           }
         }
       }
+    },
+    "server-auth-core-application-services": {
+      "root": "libs/server/auth/core/application-services",
+      "sourceRoot": "libs/server/auth/core/application-services/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/server/auth/core/application-services/tsconfig.lib.json",
+              "libs/server/auth/core/application-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/auth/core/application-services/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/auth/core/application-services/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

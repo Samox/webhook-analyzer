@@ -34,6 +34,9 @@
       ],
       "@webhook-analyzer/server/auth/shell": [
         "libs/server/auth/shell/src/index.ts"
+      ],
+      "@webhook-analyzer/server/auth/core/application-services": [
+        "libs/server/auth/core/application-services/src/index.ts"
       ]
     }
   },

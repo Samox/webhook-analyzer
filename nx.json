@@ -45,6 +45,9 @@
     },
     "server-auth-shell": {
       "tags": []
+    },
+    "server-auth-core-application-services": {
+      "tags": []
     }
   }
 }
