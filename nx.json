@@ -60,6 +60,9 @@
     },
     "server-user-core-domain": {
       "tags": []
+    },
+    "server-user-shell": {
+      "tags": []
     }
   }
 }
