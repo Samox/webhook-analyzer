@@ -57,6 +57,9 @@
     },
     "server-user-core-domain-services": {
       "tags": []
+    },
+    "server-user-core-domain": {
+      "tags": []
     }
   }
 }
