@@ -1,0 +1,6 @@
+checks:
+  - name: typecov
+    options:
+      atLeast: 99
+      name: api
+      tsconfigPath: apps/webhook-analyzer-api/tsconfig.app.json
